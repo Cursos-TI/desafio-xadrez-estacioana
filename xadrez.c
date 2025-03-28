@@ -1,21 +1,35 @@
 #include <stdio.h>
 
 // Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-
+    //  variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int casasBispo = 5;   // O bispo se moverá 5 casas na diagonal
+    int casasTorre = 5;    // A torre se moverá 5 casas para a direita
+    int casasRainha = 8;   // A rainha se moverá 8 casas para a esquerda
+    
     // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    printf("movimento do pisbo (5 casas na diagonal cima direita):\n");
+    int i;
+    for(i = 0; i < casasBispo; i++){
+        printf("Cima Direita\n");  // Movimento do Bispo para cima e à direita
+    }
+    
+    // Implementação de Movimentação da Torre (usando while)
+    printf("\nMovimento da Torre (5 casas para a direita):\n");
+    int a = 0;
+    while (a < casasTorre) {
+        printf("Direita\n");  // Movimento da Torre para a direita
+        a++;
+    }
 
     // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("\nMovimento da Rainha (8 casas para a esquerda):\n");
+    int j = 0;
+    do {
+    printf("Esquerda\n");  // Movimento da Rainha para a esquerda
+    j++;
+    } while (j < casasRainha);
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
