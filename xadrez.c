@@ -7,7 +7,7 @@ int main() {
     int casasBispo = 5;   // O bispo se moverá 5 casas na diagonal
     int casasTorre = 5;    // A torre se moverá 5 casas para a direita
     int casasRainha = 8;   // A rainha se moverá 8 casas para a esquerda
-    
+
     // Implementação de Movimentação do Bispo
     printf("movimento do pisbo (5 casas na diagonal cima direita):\n");
     int i;
@@ -30,6 +30,19 @@ int main() {
     printf("Esquerda\n");  // Movimento da Rainha para a esquerda
     j++;
     } while (j < casasRainha);
+
+    // Implementação do Movimento do Cavalo (2 casas para baixo e 1 casa para a esquerda)
+    printf("\nMovimento do Cavalo (2 casas para baixo e 1 casa para a esquerda):\n");
+
+    // Loop aninhado para simular o movimento do Cavalo
+    int m;
+    for (m = 0; m < 2; m++) {  // Movimento para baixo (2 casas)
+        printf("Baixo\n");
+    }
+    int n;
+    for (n = 0; n < 1; n++) {  // Movimento para a esquerda (1 casa)
+        printf("Esquerda\n");
+    }
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
